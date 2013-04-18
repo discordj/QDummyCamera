@@ -1,0 +1,12 @@
+#ifndef QDUMMYCAMERA_GLOBAL_H
+#define QDUMMYCAMERA_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#ifdef QDUMMYCAMERA_LIB
+# define QDUMMYCAMERA_EXPORT Q_DECL_EXPORT
+#else
+# define QDUMMYCAMERA_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // QDUMMYCAMERA_GLOBAL_H
